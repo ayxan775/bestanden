@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <nav><a href="./">← Bestanden</a> · <a href="privacy.html" hreflang="de" lang="de">Deutsch</a></nav>
 <main>
 <h1>Privacy Policy</h1>
@@ -20,7 +21,8 @@
 <li>The app needs <strong>no account</strong>. It shows <strong>no ads</strong>. It uses <strong>no tracking</strong> and <strong>no analytics tools</strong>.</li>
 <li>Your progress, your letters and your voice recordings stay <strong>on your iPhone</strong>. We do not receive them.</li>
 <li>All learning content is inside the app. This version downloads no content from the internet.</li>
-<li>The app sends data only to Apple (buying “Pro”) and to the service RevenueCat (checking the purchase). The connection to RevenueCat starts only when you open the purchase screen or restore purchases, or if Pro was bought on this iPhone.</li>
+<li>The app sends <strong>no data to us</strong>. Apart from Apple (buying “Pro”), it uses <strong>no services of other providers</strong>. The app asks only Apple whether Pro was bought.</li>
+<li>We receive data from you only if you send us an email. From Apple we receive only aggregated figures from which we cannot identify you.</li>
 <li>This website sets no cookies and uses no analytics tools.</li>
 </ul>
 
@@ -30,6 +32,7 @@ Bulvar küçəsi, Kristal Abşeron 2, ev 7<br>
 AZ5000 Sumqayıt<br>
 Azerbaijan<br>
 Email: <a href="mailto:tagizade941@gmail.com">tagizade941@gmail.com</a></p>
+
 
 <h2 id="device">3. Data on your iPhone</h2>
 <p>The app stores this data only on your iPhone:</p>
@@ -42,7 +45,7 @@ Email: <a href="mailto:tagizade941@gmail.com">tagizade941@gmail.com</a></p>
 <li>whether Pro is unlocked</li>
 </ul>
 <p>This data is not sent to us. We have no access to it.</p>
-<p>Once RevenueCat has started (see section 5), its component stores a random identifier and your last purchase status on the iPhone. It also reads the iOS identifier for vendors. Storing and reading this information is strictly necessary to buy, restore and unlock Pro (§ 25(2) no. 2 TDDDG, the German law implementing Art. 5(3) of the ePrivacy Directive). No consent is required for it. If you never open the purchase screen and never restore, this does not happen.</p>
+<p>Storing this data on your iPhone and checking the purchase status with StoreKit (see section 5) are strictly necessary for the app to provide the features you want to use (§ 25(2) no. 2 TDDDG, the German law implementing Art. 5(3) of the ePrivacy Directive). No consent is required for this.</p>
 <p><strong>Deleting:</strong> if you delete the app, all of this data is deleted. You can also delete error reports in the app’s settings.</p>
 <p><strong>Backups:</strong> depending on your iOS settings, Apple includes app data in your iCloud or device backup. Apple’s settings and privacy policy apply to that.</p>
 
@@ -56,26 +59,11 @@ Email: <a href="mailto:tagizade941@gmail.com">tagizade941@gmail.com</a></p>
 </ul>
 
 <h2 id="pro">5. Buying Pro</h2>
-<h3>Apple App Store</h3>
-<p>Apple handles the purchase: Apple Distribution International Ltd., Hollyhill Industrial Estate, Hollyhill, Cork, Ireland. Apple processes your Apple ID and payment data under its own responsibility. We receive neither your name nor your payment data. More: <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></p>
-
-<h3>RevenueCat</h3>
-<p>To check whether Pro was bought and to restore purchases, we use RevenueCat, Inc., 1032 E Brandon Blvd #3003, Brandon, FL 33511, USA.</p>
-<p>The app connects to RevenueCat only when you open the purchase screen (e.g. by tapping Pro content) or tap “Restore purchases”. On the purchase screen it loads the product and price. When you buy or restore, it sends Apple’s purchase data. If Pro was bought on this iPhone, the app checks the purchase status at every start, so that a refund, for example, is taken into account. If you never open the purchase screen, the app sends nothing to RevenueCat. Apple also reports purchases and refunds directly to RevenueCat. The following is processed:</p>
-<ul>
-<li>a random identifier that RevenueCat creates when it first connects (no name, no email)</li>
-<li>the iOS identifier for vendors (“identifierForVendor”). It is different for every app provider. It is not the advertising ID.</li>
-<li>purchase and transaction data from Apple, e.g. product, price, time, App Store country</li>
-<li>technical information: device model, iOS version, app version, preferred languages</li>
-<li>IP address</li>
-</ul>
-<p><strong>Purpose:</strong> to unlock Pro, to check and restore purchases and to take refunds into account.<br>
-<strong>Legal basis:</strong> Art. 6(1)(b) GDPR (performance of the Pro purchase contract) and Art. 6(1)(f) GDPR (our legitimate interest in reliable purchase checks).<br>
-<strong>Processor:</strong> RevenueCat processes the data on our behalf (Art. 28 GDPR).<br>
-<strong>Transfer to the USA:</strong> based on the European Commission’s Standard Contractual Clauses (Art. 46(2)(c) GDPR), which are part of our agreement with RevenueCat.<br>
-<strong>Retention:</strong> as long as we use RevenueCat. When the agreement ends, the data is deleted. At your request we delete it earlier (see section 12).<br>
-More: <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></p>
-<p>You do not have to provide this data. Without the connection to RevenueCat, however, you cannot buy or restore Pro. Everything else in the app also works without internet.</p>
+<p>Pro is a one-time purchase in the App Store. Apple handles the purchase: Apple Distribution International Ltd., Hollyhill Industrial Estate, Hollyhill, Cork, Ireland. Apple processes your Apple ID, your payment data and the purchase data under its own responsibility. More: <a href="https://www.apple.com/legal/privacy/">Apple’s privacy policy</a> and <a href="https://www.apple.com/legal/privacy/data/en/app-store/">App Store &amp; Privacy</a></p>
+<p>The app asks StoreKit whether Pro was bought. StoreKit is Apple’s purchase function on your iPhone. The app asks at every start and on the purchase screen. It also watches for changes, e.g. a refund. After a refund, StoreKit no longer reports Pro, and the app locks Pro again. On the purchase screen the app shows the product and price from Apple. When you tap “Restore purchases”, iOS syncs your purchases with Apple.</p>
+<p>For this the app talks only to Apple. We receive no data about your purchase: not your name, not your Apple ID and not your payment data. Apple gives us only aggregated sales figures, e.g. purchases per country. We cannot identify you from them.<br>
+<strong>Legal basis</strong> for the check in the app: Art. 6(1)(b) GDPR (performance of the Pro purchase contract).</p>
+<p>You need internet to buy and to restore. Everything else in the app also works without internet.</p>
 
 <h2 id="reports">6. Error reports</h2>
 <p>In the app you can report a mistake in a task. The report is stored <strong>only on your iPhone</strong>. It contains: date, reason, task number, your text (if you write one), language, app version and content version. It contains no device identifier.</p>
@@ -120,7 +108,7 @@ More: <a href="https://docs.github.com/site-policy/privacy-policies/github-gener
 <li><strong>object</strong> to processing based on Art. 6(1)(f) GDPR, on grounds relating to your particular situation (Art. 21 GDPR)</li>
 </ul>
 <p>Write to <a href="mailto:tagizade941@gmail.com">tagizade941@gmail.com</a> to use these rights.</p>
-<p>Please note: most data is only on your iPhone and we cannot see it. The data at RevenueCat contains no name. Often we can only match it to you with your help, e.g. with the order ID from Apple’s purchase receipt.</p>
+<p>Please note: the app sends no data to us. Most data is only on your iPhone and we cannot see it. Only Apple has data about your purchase. You can exercise your rights regarding that data directly with Apple: <a href="https://privacy.apple.com/">privacy.apple.com</a></p>
 <p><strong>Complaint:</strong> you can complain to a data protection supervisory authority (Art. 77 GDPR), in particular in the EU country where you live or work. In Germany, this is the authority of your federal state.</p>
 
 <h2 id="changes">13. Changes</h2>
